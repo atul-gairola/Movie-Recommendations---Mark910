@@ -1,3 +1,55 @@
+header {
+  padding: 20px 50px;
+  text-align: center;
+}
+
+main {
+  padding: 20px 50px;
+}
+
 .App {
+  text-align: center;
+}
+
+.tagContainer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  place-items: center;
+  grid-gap: 50px;
+}
+
+.tag {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.movieCard {
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 20px 30px;
+  text-align: left;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #000;
+}
+
+.description {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+footer {
+  padding: 20px 50px;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
   text-align: center;
 }

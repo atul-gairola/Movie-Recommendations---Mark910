@@ -1,4 +1,4 @@
-export default data = {
+const data = {
   action: [
     {
       name: "The Dark Knight",
@@ -96,3 +96,5 @@ export default data = {
     },
   ],
 };
+
+export default data;
