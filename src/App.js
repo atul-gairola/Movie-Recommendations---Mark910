@@ -13,17 +13,24 @@ function App() {
 
   return (
     <div className="App">
-      <header>Movie Recommendations</header>
+      <header>
+        <h1>Movie Recommendations</h1>
+      </header>
       <main>
         <nav className="tagContainer">
-          {Object.keys(data).map((tag) => (
-            <div onClick={handleTagChange} className="tag" id={tag} key={tag}>
-              {tag}
+          {Object.keys(data).map((tagName) => (
+            <div
+              onClick={handleTagChange}
+              className={`tag ${tagName === tag && "activeTag"}`}
+              id={tagName}
+              key={tagName}
+            >
+              {tagName}
             </div>
           ))}
         </nav>
 
-        <div>
+        <div className="movieContainer">
           {data[tag].map((cur, i) => (
             <div className="movieCard" key={i}>
               <p className="title">{cur.name}</p>
